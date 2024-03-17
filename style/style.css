@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white : hsl(0, 0%, 100%);
+    --grey : hsl(0, 0%, 20%);
+    --dark-grey : hsl(0, 0%, 12%);
+    --off-black : hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--off-black);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: var(--dark-grey);
+    height: auto;
+    padding: 2rem;
+    border-radius: 10px;
+   
+}
+
+.card-profile{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card-profile img{
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.card-profile .profile-name{
+    font-weight: 700;
+    color: var(--white);
+}
+
+.card-profile .profile-address{
+    color: var(--green);
+    font-weight: 400;
+   
+}
+
+.card-profile .profile-job{
+    color: var(--white);
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.card-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-link .btn{
+   background-color: var(--grey);
+    width: 100%;
+    padding: .7rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.card-link .btn:hover{
+    background-color: var(--green);
+   cursor: pointer;
+}
+
+.card-link a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    
+}
